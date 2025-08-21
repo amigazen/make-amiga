@@ -1,0 +1,8 @@
+FROM LIB:c.o "src/ar.o"+"src/arscan.o"+"src/commands.o"+"src/default.o"+"src/dir.o"+"src/expand.o"+"src/file.o"+"src/function.o"+"src/getopt.o"+"src/getopt1.o"+"src/guile.o"+"src/hash.o"+"src/implicit.o"+"src/job.o"+"src/load.o"+"src/loadapi.o"+"src/main.o"+"src/misc.o"+"src/output.o"+"src/read.o"+"src/remake.o"+"src/rule.o"+"src/shuffle.o"+"src/signame.o"+"src/strcache.o"+"src/variable.o"+"src/version.o"+"src/vpath.o"+"src/remote-stub.o"+"lib/alloca.o"+"lib/getloadavg.o"+"lib/fnmatch.o"+"lib/glob.o"+"src/amiga.o"+"src/snprintf.o"
+TO "make"
+LIB sc:lib/sc.lib sc:lib/scm.lib LIB:small.lib LIB:sc.lib LIB:amiga.lib
+DEFINE __CXM33=__UCXM33
+DEFINE __CXD33=__UCXD33
+DEFINE __CXM22=__UCXM22
+DEFINE __CXD22=__UCXD22
+

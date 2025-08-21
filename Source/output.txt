@@ -1,0 +1,956 @@
+makedir lib/.
+lib/. already exists
+makedir src/.
+src/. already exists
+delete lib/alloca.h
+lib/alloca.h  Deleted
+copy lib/alloca.in.h To lib/alloca.h
+delete lib/fnmatch.h
+lib/fnmatch.h  Deleted
+copy lib/fnmatch.in.h To lib/fnmatch.h
+delete lib/glob.h
+lib/glob.h  Deleted
+copy lib/glob.in.h To lib/glob.h
+copy src/config.ami To src/config.h
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/ar.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+  names = alloca [33;7m([0mstate.n * sizeof (const char *));
+src/ar.c 315 Warning 100: no prototype declared for function "alloca"
+
+====================
+  names = alloca (state.n * sizeof (const char *))[33;7m;[0m
+src/ar.c 315 Warning 225: pointer type mismatch
+                          "char const **" does not match "int"
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/arscan.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+              name = alloca [33;7m([0mname_len + 1);
+src/arscan.c 732 Warning 100: no prototype declared for function "alloca"
+
+====================
+              name = alloca (name_len + 1)[33;7m;[0m
+src/arscan.c 732 Warning 225: pointer type mismatch
+                              "char *" does not match "int"
+
+====================
+            namemap = alloca (eltsize + 1)[33;7m;[0m
+src/arscan.c 806 Warning 225: pointer type mismatch
+                              "char *" does not match "int"
+
+====================
+  datelen = snprintf [33;7m([0mTOCHAR (ar_hdr.ar_date), sizeof ar_hdr.ar_date,
+src/arscan.c 957 Warning 100: no prototype declared for function "snprintf"
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/commands.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+struct file[33;7m;[0m
+src/variable.h 19 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+extern unsigned long [33;7mlong[0m env_recursion;
+src/variable.h 117 Warning 101: redundant keywords in declaration
+
+====================
+struct file[33;7m;[0m
+src/commands.h 37 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+struct child[33;7m;[0m
+src/commands.h 38 Warning 63: item "child" already declared
+                              See line 43 file "src/job.h"
+
+====================
+      p = alloca [33;7m([0mcp - file->name + 1);
+src/commands.c 80 Warning 100: no prototype declared for function "alloca"
+
+====================
+      p = alloca (cp - file->name + 1)[33;7m;[0m
+src/commands.c 80 Warning 225: pointer type mismatch
+                               "char *" does not match "int"
+
+====================
+      p = alloca (len)[33;7m;[0m
+src/commands.c 85 Warning 225: pointer type mismatch
+                               "char *" does not match "int"
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/default.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+struct file[33;7m;[0m
+src/variable.h 19 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+extern unsigned long [33;7mlong[0m env_recursion;
+src/variable.h 117 Warning 101: redundant keywords in declaration
+
+====================
+struct file[33;7m;[0m
+src/commands.h 37 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+struct child[33;7m;[0m
+src/commands.h 38 Warning 63: item "child" already declared
+                              See line 43 file "src/job.h"
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/dir.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+		h = (h << 4[33;7m)[0m + (isupper (uc) ? tolower (uc) : uc);
+src/dir.c 569 Warning 94: uninitialized auto variable "h"
+
+====================
+error (errno) ) , ( "readdir %s: %s" ), (  dir->name  ), (  strerror (errno[33;7m)[0m
+src/dir.c 757 Warning 217: macro invocation may call function multiple times
+
+====================
+      p = alloca [33;7m([0mdirend - name + 1);
+src/dir.c 894 Warning 100: no prototype declared for function "alloca"
+
+====================
+      p = alloca (dirend - name + 1)[33;7m;[0m
+src/dir.c 894 Warning 225: pointer type mismatch
+                           "char *" does not match "int"
+
+====================
+          cp = alloca (dirend - p + 1)[33;7m;[0m
+src/dir.c 970 Warning 225: pointer type mismatch
+                           "char *" does not match "int"
+
+====================
+          cp = alloca (dirend - filename + 1)[33;7m;[0m
+src/dir.c 1066 Warning 225: pointer type mismatch
+                            "char *" does not match "int"
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/expand.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+struct commands[33;7m;[0m
+src/filedef.h 24 Warning 63: item "commands" already declared
+                             See line 20 file "src/commands.h"
+
+====================
+struct file[33;7m;[0m
+src/variable.h 19 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+extern unsigned long [33;7mlong[0m env_recursion;
+src/variable.h 117 Warning 101: redundant keywords in declaration
+
+====================
+                        pattern = alloca [33;7m([0msubst_end - subst_beg + 2);
+src/expand.c 364 Warning 100: no prototype declared for function "alloca"
+
+====================
+                        pattern = alloca (subst_end - subst_beg + 2)[33;7m;[0m
+src/expand.c 364 Warning 225: pointer type mismatch
+                              "char *" does not match "int"
+
+====================
+                        replace = alloca (replace_end - replace_beg + 2)[33;7m;[0m
+src/expand.c 369 Warning 225: pointer type mismatch
+                              "char *" does not match "int"
+
+====================
+    tmp = alloca (end - str + 1)[33;7m;[0m
+src/expand.c 466 Warning 225: pointer type mismatch
+                              "char *" does not match "int"
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/file.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+struct file[33;7m;[0m
+src/commands.h 37 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+struct child[33;7m;[0m
+src/commands.h 38 Warning 63: item "child" already declared
+                              See line 43 file "src/job.h"
+
+====================
+struct file[33;7m;[0m
+src/variable.h 19 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+extern unsigned long [33;7mlong[0m env_recursion;
+src/variable.h 117 Warning 101: redundant keywords in declaration
+
+====================
+struct dep[33;7m;[0m
+src/shuffle.h 17 Warning 63: item "dep" already declared
+                             See line 60 file "src/dep.h"
+
+====================
+struct goaldep[33;7m;[0m
+src/shuffle.h 18 Warning 63: item "goaldep" already declared
+                             See line 69 file "src/dep.h"
+
+====================
+          char *nm = alloca [33;7m([0mnl);
+src/file.c 494 Warning 100: no prototype declared for function "alloca"
+
+====================
+          char *nm = alloca (nl)[33;7m;[0m
+src/file.c 494 Warning 225: pointer type mismatch
+                            "char *" does not match "int"
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/function.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+struct file[33;7m;[0m
+src/variable.h 19 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+extern unsigned long [33;7mlong[0m env_recursion;
+src/variable.h 117 Warning 101: redundant keywords in declaration
+
+====================
+struct file[33;7m;[0m
+src/commands.h 37 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+struct child[33;7m;[0m
+src/commands.h 38 Warning 63: item "child" already declared
+                              See line 43 file "src/job.h"
+
+====================
+      char *new_chars = alloca [33;7m([0mlen);
+src/function.c 300 Warning 100: no prototype declared for function "alloca"
+
+====================
+      char *new_chars = alloca (len)[33;7m;[0m
+src/function.c 300 Warning 225: pointer type mismatch
+                                "char *" does not match "int"
+
+====================
+static long [33;7mlong[0m
+src/function.c 769 Warning 101: redundant keywords in declaration
+
+====================
+  long [33;7mlong[0m num;
+src/function.c 775 Warning 101: redundant keywords in declaration
+
+====================
+  num = strtoll [33;7m([0mbeg, &endp, 10);
+src/function.c 782 Warning 100: no prototype declared for function "strtoll"
+
+====================
+  long [33;7mlong[0m i;
+src/function.c 797 Warning 101: redundant keywords in declaration
+
+====================
+  long [33;7mlong[0m start, stop, count;
+src/function.c 820 Warning 101: redundant keywords in declaration
+
+====================
+ding_var ),  __builtin_strlen( badfirst )  +  __builtin_strlen( make_lltoa [33;7m([0m
+src/function.c 826 Warning 100: no prototype declared for function "make_lltoa"
+
+====================
+__builtin_strlen( badfirst )  +  __builtin_strlen( make_lltoa (start, buf) [33;7m)[0m
+src/function.c 826 Warning 88: argument type incorrect
+                               Expecting "char const *", found "int"
+
+====================
+ (start, buf) ) , ( "%s: '%s'" ), (  badfirst  ), (  make_lltoa (start, buf[33;7m)[0m
+src/function.c 826 Warning 217: macro invocation may call function multiple times
+
+====================
+__builtin_strlen( badsecond )  +  __builtin_strlen( make_lltoa (stop, buf) [33;7m)[0m
+src/function.c 830 Warning 88: argument type incorrect
+                               Expecting "char const *", found "int"
+
+====================
+a (stop, buf) ) , ( "%s: '%s'" ), (  badsecond  ), (  make_lltoa (stop, buf[33;7m)[0m
+src/function.c 830 Warning 217: macro invocation may call function multiple times
+
+====================
+        char *msg = alloca (len + 2)[33;7m;[0m
+src/function.c 1186 Warning 225: pointer type mismatch
+                                 "char *" does not match "int"
+
+====================
+      nm = alloca (len + 1)[33;7m;[0m
+src/function.c 2353 Warning 225: pointer type mismatch
+                                 "char *" does not match "int"
+
+====================
+, (   ((const char *) ( "open: %s: %s" ))   ), (  nm  ), (  strerror (errno[33;7m)[0m
+src/function.c 2359 Warning 217: macro invocation may call function multiple times
+
+====================
+ (   ((const char *) ( "write: %s: %s" ))   ), (  nm  ), (  strerror (errno[33;7m)[0m
+src/function.c 2372 Warning 217: macro invocation may call function multiple times
+
+====================
+ (   ((const char *) ( "close: %s: %s" ))   ), (  nm  ), (  strerror (errno[33;7m)[0m
+src/function.c 2375 Warning 217: macro invocation may call function multiple times
+
+====================
+      nm = alloca (len + 1)[33;7m;[0m
+src/function.c 2396 Warning 225: pointer type mismatch
+                                 "char *" does not match "int"
+
+====================
+, (   ((const char *) ( "open: %s: %s" ))   ), (  nm  ), (  strerror (errno[33;7m)[0m
+src/function.c 2409 Warning 217: macro invocation may call function multiple times
+
+====================
+, (   ((const char *) ( "read: %s: %s" ))   ), (  nm  ), (  strerror (errno[33;7m)[0m
+src/function.c 2423 Warning 217: macro invocation may call function multiple times
+
+====================
+ (   ((const char *) ( "close: %s: %s" ))   ), (  nm  ), (  strerror (errno[33;7m)[0m
+src/function.c 2428 Warning 217: macro invocation may call function multiple times
+
+====================
+  argvp = argv = alloca (sizeof (char *) * (nargs + 2))[33;7m;[0m
+src/function.c 2640 Warning 225: pointer type mismatch
+                                 "char **" does not match "int"
+
+====================
+  body = alloca (flen + 4)[33;7m;[0m
+src/function.c 2754 Warning 225: pointer type mismatch
+                                 "char *" does not match "int"
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/getopt.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+  posixly_correct = getenv [33;7m([0m"POSIXLY_CORRECT");
+src/getopt.c 390 Warning 100: no prototype declared for function "getenv"
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/getopt1.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/guile.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/hash.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/implicit.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+struct file[33;7m;[0m
+src/variable.h 19 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+extern unsigned long [33;7mlong[0m env_recursion;
+src/variable.h 117 Warning 101: redundant keywords in declaration
+
+====================
+struct file[33;7m;[0m
+src/commands.h 37 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+struct child[33;7m;[0m
+src/commands.h 38 Warning 63: item "child" already declared
+                              See line 43 file "src/job.h"
+
+====================
+struct dep[33;7m;[0m
+src/shuffle.h 17 Warning 63: item "dep" already declared
+                             See line 60 file "src/dep.h"
+
+====================
+struct goaldep[33;7m;[0m
+src/shuffle.h 18 Warning 63: item "goaldep" already declared
+                             See line 69 file "src/dep.h"
+
+====================
+  char *depname = alloca [33;7m([0mdeplen);
+src/implicit.c 236 Warning 100: no prototype declared for function "alloca"
+
+====================
+  char *depname = alloca (deplen)[33;7m;[0m
+src/implicit.c 236 Warning 225: pointer type mismatch
+                                "char *" does not match "int"
+
+====================
+                  pathdir = alloca (pathlen + 1)[33;7m;[0m
+src/implicit.c 496 Warning 225: pointer type mismatch
+                                "char *" does not match "int"
+
+====================
+                        int_file = alloca (sizeof (struct file))[33;7m;[0m
+src/implicit.c 892 Warning 225: pointer type mismatch
+                                "struct file *" does not match "int"
+
+====================
+          char *nm = alloca (rule->lens[ri] + fullstemlen + 1)[33;7m;[0m
+src/implicit.c 1107 Warning 225: pointer type mismatch
+                                 "char *" does not match "int"
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/job.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+struct file[33;7m;[0m
+src/commands.h 37 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+struct child[33;7m;[0m
+src/commands.h 38 Warning 63: item "child" already declared
+                              See line 43 file "src/job.h"
+
+====================
+struct file[33;7m;[0m
+src/variable.h 19 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+extern unsigned long [33;7mlong[0m env_recursion;
+src/variable.h 117 Warning 101: redundant keywords in declaration
+
+====================
+struct dep[33;7m;[0m
+src/shuffle.h 17 Warning 63: item "dep" already declared
+                             See line 60 file "src/dep.h"
+
+====================
+struct goaldep[33;7m;[0m
+src/shuffle.h 18 Warning 63: item "goaldep" already declared
+                             See line 69 file "src/dep.h"
+
+====================
+      char *a = alloca [33;7m([0mstrlen (flocp->filenm) + 6 + INTSTR_LENGTH +
+src/job.c 561 Warning 100: no prototype declared for function "alloca"
+
+====================
+rlen( flocp->filenm )  + 6 +  (53 * sizeof( unsigned long ) / 22 + 3)  + 1)[33;7m;[0m
+src/job.c 561 Warning 225: pointer type mismatch
+                           "char *" does not match "int"
+
+====================
+= alloca ( (sizeof (  " shuffle="  )-1)  +  __builtin_strlen( smode )  + 1)[33;7m;[0m
+src/job.c 572 Warning 225: pointer type mismatch
+                           "char *" does not match "int"
+src/job.c 639 Warning 93: no reference to identifier "reap_more"
+
+====================
+char *n = alloca ( __builtin_strlen( cmds->fileinfo.filenm )  + 1 + 11 + 1)[33;7m;[0m
+src/job.c 1906 Warning 225: pointer type mismatch
+                            "char *" does not match "int"
+
+====================
+                  char *cp = newer = alloca (len)[33;7m;[0m
+src/job.c 1943 Warning 225: pointer type mismatch
+                            "char *" does not match "int"
+src/job.c 2867 Warning 93: no reference to identifier "cp"
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/load.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+[33;7m}[0m
+src/load.c 260 Warning 85: return value mismatch for function "unload_file"
+                           Expecting "int", found "void"
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/loadapi.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+struct file[33;7m;[0m
+src/variable.h 19 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+extern unsigned long [33;7mlong[0m env_recursion;
+src/variable.h 117 Warning 101: redundant keywords in declaration
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/main.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+struct file[33;7m;[0m
+src/variable.h 19 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+extern unsigned long [33;7mlong[0m env_recursion;
+src/variable.h 117 Warning 101: redundant keywords in declaration
+
+====================
+struct file[33;7m;[0m
+src/commands.h 37 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+struct child[33;7m;[0m
+src/commands.h 38 Warning 63: item "child" already declared
+                              See line 43 file "src/job.h"
+
+====================
+struct dep[33;7m;[0m
+src/shuffle.h 17 Warning 63: item "dep" already declared
+                             See line 60 file "src/dep.h"
+
+====================
+struct goaldep[33;7m;[0m
+src/shuffle.h 18 Warning 63: item "goaldep" already declared
+                             See line 69 file "src/dep.h"
+src/main.c 1563 Warning 93: no reference to identifier "file"
+src/main.c 1564 Warning 93: no reference to identifier "buffer"
+src/main.c 1565 Warning 93: no reference to identifier "len"
+
+====================
+      p = value = alloca [33;7m([0mlen);
+src/main.c 1900 Warning 100: no prototype declared for function "alloca"
+
+====================
+      p = value = alloca (len)[33;7m;[0m
+src/main.c 1900 Warning 225: pointer type mismatch
+                             "char *" does not match "int"
+
+====================
+) ( "fwrite: temporary file %s: %s" ))   ), (  newnm  ), (  strerror (errno[33;7m)[0m
+src/main.c 1959 Warning 217: macro invocation may call function multiple times
+
+====================
+      p = endp = value = alloca (len)[33;7m;[0m
+src/main.c 2062 Warning 225: pointer type mismatch
+                             "char *" does not match "int"
+
+====================
+        makefile_mtimes = alloca (num_mkfiles * sizeof (  unsigned long  ))[33;7m;[0m
+src/main.c 2373 Warning 225: pointer type mismatch
+                             "unsigned long *" does not match "int"
+
+====================
+              nv = nargv = alloca (sizeof (char*) * (argc + 1 + 1))[33;7m;[0m
+src/main.c 2605 Warning 225: pointer type mismatch
+                             "char const **" does not match "int"
+
+====================
+                                             +  __builtin_strlen( mf )  +  1)[33;7m;[0m
+src/main.c 2641 Warning 225: pointer type mismatch
+                             "char *" does not match "int"
+
+====================
+                          char *na = alloca ( __builtin_strlen( mf )  + 3)[33;7m;[0m
+src/main.c 2647 Warning 225: pointer type mismatch
+                             "char *" does not match "int"
+
+====================
+                          na = alloca (al + 1)[33;7m;[0m
+src/main.c 2674 Warning 225: pointer type mismatch
+                             "char *" does not match "int"
+
+====================
+ = alloca ( (sizeof ( "--temp-stdin=" )-1)  +  __builtin_strlen( mf )  + 1)[33;7m;[0m
+src/main.c 2681 Warning 225: pointer type mismatch
+                             "char *" does not match "int"
+
+====================
+                      char *na = alloca (al + ml)[33;7m;[0m
+src/main.c 2693 Warning 225: pointer type mismatch
+                             "char *" does not match "int"
+
+====================
+              char *b = alloca (40)[33;7m;[0m
+src/main.c 2770 Warning 225: pointer type mismatch
+                             "char *" does not match "int"
+
+====================
+          exec_command (nargv[33;7m)[0m;
+src/main.c 2785 Warning 104: conversion from pointer to const/volatile to pointer to non-const/volatile
+
+====================
+            vp = alloca (oldlen + 1 + newlen + 1)[33;7m;[0m
+src/main.c 3110 Warning 225: pointer type mismatch
+                             "char *" does not match "int"
+
+====================
+  char *varref = alloca (2 + len + 2)[33;7m;[0m
+src/main.c 3382 Warning 225: pointer type mismatch
+                             "char *" does not match "int"
+
+====================
+  argv = alloca ((1 + len + 1) * sizeof (char *))[33;7m;[0m
+src/main.c 3403 Warning 225: pointer type mismatch
+                             "char const **" does not match "int"
+
+====================
+  buf = alloca (1 + len + 1)[33;7m;[0m
+src/main.c 3412 Warning 225: pointer type mismatch
+                             "char *" does not match "int"
+
+====================
+             do { struct flag *new = alloca (sizeof (struct flag))[33;7m;[0m n
+src/main.c 3529 Warning 225: pointer type mismatch
+                             "struct flag *" does not match "int"
+
+====================
+             do { struct flag *new = alloca (sizeof (struct flag))[33;7m;[0m n
+src/main.c 3540 Warning 225: pointer type mismatch
+                             "struct flag *" does not match "int"
+
+====================
+              char *buf = alloca (30)[33;7m;[0m
+src/main.c 3543 Warning 225: pointer type mismatch
+                             "char *" does not match "int"
+
+====================
+               do { struct flag *new = alloca (sizeof (struct flag))[33;7m;[0m
+src/main.c 3545 Warning 225: pointer type mismatch
+                             "struct flag *" does not match "int"
+
+====================
+             do { struct flag *new = alloca (sizeof (struct flag))[33;7m;[0m n
+src/main.c 3555 Warning 225: pointer type mismatch
+                             "struct flag *" does not match "int"
+
+====================
+              char *buf = alloca (100)[33;7m;[0m
+src/main.c 3558 Warning 225: pointer type mismatch
+                             "char *" does not match "int"
+
+====================
+               do { struct flag *new = alloca (sizeof (struct flag))[33;7m;[0m
+src/main.c 3560 Warning 225: pointer type mismatch
+                             "struct flag *" does not match "int"
+
+====================
+             do { struct flag *new = alloca (sizeof (struct flag))[33;7m;[0m n
+src/main.c 3567 Warning 225: pointer type mismatch
+                             "struct flag *" does not match "int"
+
+====================
+                   do { struct flag *new = alloca (sizeof (struct flag))[33;7m;[0m
+src/main.c 3578 Warning 225: pointer type mismatch
+                             "struct flag *" does not match "int"
+
+====================
+  flagstring = alloca (1 + flagslen + 1)[33;7m;[0m
+src/main.c 3594 Warning 225: pointer type mismatch
+                             "char *" does not match "int"
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/misc.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+make_lltoa (long [33;7mlong[0m val, char *buf)
+src/misc.c 66 Warning 101: redundant keywords in declaration
+
+====================
+make_ulltoa (unsigned long [33;7mlong[0m val, char *buf)
+src/misc.c 73 Warning 101: redundant keywords in declaration
+
+====================
+    mk_state = (unsigned int)(time ( 0L ) ^ make_pid [33;7m([0m)) + 1;
+src/misc.c 97 Warning 100: no prototype declared for function "make_pid"
+
+====================
+  return rand (1000[33;7m)[0m;
+src/misc.c 254 Warning 87: argument count incorrect, expecting 0 arguments
+                           See line 51 file "include:stdlib.h"
+
+====================
+ *) ( "%s value %s: %s" ))   ), (  *tp  ), (  tmpdir  ), (  strerror (errno[33;7m)[0m
+src/misc.c 610 Warning 217: macro invocation may call function multiple times
+src/misc.c 629 Warning 161: no prototype declared at definition for function "get_tmptemplate"
+src/misc.c 655 Warning 161: no prototype declared at definition for function "get_tmppath"
+
+====================
+nnot generate temp path from %s: %s" ))   ), (  path  ), (  strerror (errno[33;7m)[0m
+src/misc.c 663 Warning 217: macro invocation may call function multiple times
+
+====================
+annot create temporary file %s: %s" ))   ), (  tmpnm  ), (  strerror (errno[33;7m)[0m
+src/misc.c 721 Warning 217: macro invocation may call function multiple times
+
+====================
+annot unlink temporary file %s: %s" ))   ), (  tmpnm  ), (  strerror (errno[33;7m)[0m
+src/misc.c 734 Warning 217: macro invocation may call function multiple times
+
+====================
+*) ( "fopen: temporary file %s: %s" ))   ), (  *name  ), (  strerror (errno[33;7m)[0m
+src/misc.c 781 Warning 217: macro invocation may call function multiple times
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/output.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/read.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+struct file[33;7m;[0m
+src/commands.h 37 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+struct child[33;7m;[0m
+src/commands.h 38 Warning 63: item "child" already declared
+                              See line 43 file "src/job.h"
+
+====================
+struct file[33;7m;[0m
+src/variable.h 19 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+extern unsigned long [33;7mlong[0m env_recursion;
+src/variable.h 117 Warning 101: redundant keywords in declaration
+
+====================
+   (0) [33;7m;[0m
+src/read.c 422 Warning 92: statement has no effect
+
+====================
+   alloca [33;7m([0m0) ;
+src/read.c 443 Warning 100: no prototype declared for function "alloca"
+
+====================
+      s1 = alloca (l + 1)[33;7m;[0m
+src/read.c 1731 Warning 225: pointer type mismatch
+                             "char *" does not match "int"
+
+====================
+  new = alloca (slen + 1)[33;7m;[0m
+src/read.c 2555 Warning 225: pointer type mismatch
+                             "char *" does not match "int"
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/remake.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+struct file[33;7m;[0m
+src/commands.h 37 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+struct child[33;7m;[0m
+src/commands.h 38 Warning 63: item "child" already declared
+                              See line 43 file "src/job.h"
+
+====================
+struct file[33;7m;[0m
+src/variable.h 19 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+extern unsigned long [33;7mlong[0m env_recursion;
+src/variable.h 117 Warning 101: redundant keywords in declaration
+
+====================
+->error) ) , ( "%s: %s" ), (  goal->file->name  ), (  strerror (goal->error[33;7m)[0m
+src/remake.c 315 Warning 217: macro invocation may call function multiple times
+
+====================
+       alloca [33;7m([0m0) ;
+src/remake.c 371 Warning 100: no prototype declared for function "alloca"
+
+====================
+          name = alloca (arlen + 1 + memlen + 2)[33;7m;[0m
+src/remake.c 1374 Warning 225: pointer type mismatch
+                               "char *" does not match "int"
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/rule.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+struct file[33;7m;[0m
+src/commands.h 37 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+struct child[33;7m;[0m
+src/commands.h 38 Warning 63: item "child" already declared
+                              See line 43 file "src/job.h"
+
+====================
+struct file[33;7m;[0m
+src/variable.h 19 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+extern unsigned long [33;7mlong[0m env_recursion;
+src/variable.h 117 Warning 101: redundant keywords in declaration
+
+====================
+      char *p = alloca [33;7m([0m1 + len + 1);
+src/rule.c 264 Warning 100: no prototype declared for function "alloca"
+
+====================
+      char *p = alloca (1 + len + 1)[33;7m;[0m
+src/rule.c 264 Warning 225: pointer type mismatch
+                            "char *" does not match "int"
+
+====================
+      char *p = alloca (1 + len + 1)[33;7m;[0m
+src/rule.c 277 Warning 225: pointer type mismatch
+                            "char *" does not match "int"
+
+====================
+  rulename = alloca ((maxsuffix * 2) + 1)[33;7m;[0m
+src/rule.c 310 Warning 225: pointer type mismatch
+                            "char *" does not match "int"
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/shuffle.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/signame.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/strcache.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+      char *key = alloca [33;7m([0mlen + 1);
+src/strcache.c 247 Warning 100: no prototype declared for function "alloca"
+
+====================
+      char *key = alloca (len + 1)[33;7m;[0m
+src/strcache.c 247 Warning 225: pointer type mismatch
+                                "char *" does not match "int"
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/variable.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+struct file[33;7m;[0m
+src/commands.h 37 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+struct child[33;7m;[0m
+src/commands.h 38 Warning 63: item "child" already declared
+                              See line 43 file "src/job.h"
+
+====================
+struct file[33;7m;[0m
+src/variable.h 19 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+extern unsigned long [33;7mlong[0m env_recursion;
+src/variable.h 117 Warning 101: redundant keywords in declaration
+
+====================
+unsigned long [33;7mlong[0m env_recursion = 0;
+src/variable.c 35 Warning 101: redundant keywords in declaration
+
+====================
+  name = alloca [33;7m([0mv->length + 1);
+src/variable.c 1770 Warning 100: no prototype declared for function "alloca"
+
+====================
+  name = alloca (v->length + 1)[33;7m;[0m
+src/variable.c 1770 Warning 225: pointer type mismatch
+                                 "char *" does not match "int"
+
+====================
+      char *t = alloca (l + 3)[33;7m;[0m
+src/variable.c 2009 Warning 225: pointer type mismatch
+                                 "char *" does not match "int"
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/version.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/vpath.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+struct file[33;7m;[0m
+src/variable.h 19 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+extern unsigned long [33;7mlong[0m env_recursion;
+src/variable.h 117 Warning 101: redundant keywords in declaration
+
+====================
+  name = alloca [33;7m([0mmaxvpath + 1 + name_dplen + 1 + flen + 1);
+src/vpath.c 353 Warning 100: no prototype declared for function "alloca"
+
+====================
+  name = alloca (maxvpath + 1 + name_dplen + 1 + flen + 1)[33;7m;[0m
+src/vpath.c 353 Warning 225: pointer type mismatch
+                             "char *" does not match "int"
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/remote-stub.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+struct file[33;7m;[0m
+src/commands.h 37 Warning 63: item "file" already declared
+                              See line 29 file "src/filedef.h"
+
+====================
+struct child[33;7m;[0m
+src/commands.h 38 Warning 63: item "child" already declared
+                              See line 43 file "src/job.h"
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    lib/alloca.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+      memory_full [33;7m([0m);
+lib/alloca.c 148 Warning 100: no prototype declared for function "memory_full"
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    lib/getloadavg.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    lib/fnmatch.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    lib/glob.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+      newp = (char *)  alloca  [33;7m([0mdirlen + 1);
+lib/glob.c 486 Warning 100: no prototype declared for function "alloca"
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/amiga.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+extern unsigned long [33;7mlong[0m env_recursion;
+src/variable.h 117 Warning 101: redundant keywords in declaration
+
+====================
+long [33;7mlong[0m int strtoll(const char* str, char** endptr, int base)
+src/amiga.c 27 Warning 101: redundant keywords in declaration
+src/amiga.c 31 Warning 161: no prototype declared at definition for function "memory_full"
+sc  UTILLIB IDir src IDir ./src IDir lib IDir ./lib DEF _AMIGA=1 DEF HAVE_CONFIG_H=1    src/snprintf.c
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+
+====================
+    result = vsnprintf[33;7m([0mbuffer, bufsize, fmt, args);
+src/snprintf.c 41 Warning 100: no prototype declared for function "vsnprintf"
+sc Link  UTILLIB with sc:lib/UTILLIB.with  src/ar.o src/arscan.o src/commands.o src/default.o src/dir.o src/expand.o src/file.o src/function.o src/getopt.o src/getopt1.o src/guile.o src/hash.o src/implicit.o src/job.o src/load.o src/loadapi.o src/main.o src/misc.o src/output.o src/read.o src/remake.o src/rule.o src/shuffle.o src/signame.o src/strcache.o src/variable.o src/version.o src/vpath.o src/remote-stub.o lib/alloca.o lib/getloadavg.o lib/fnmatch.o lib/glob.o src/amiga.o src/snprintf.o Lib sc:lib/sc.lib LIB sc:lib/scm.lib LIB:small.lib To make
+SAS/C Amiga Compiler 6.58
+Copyright (c) 1988-1995 SAS Institute Inc.
+Slink - Version 6.58
+Copyright (c) 1988-1995 SAS Institute, Inc.  All Rights Reserved.
+
+
+SLINK Complete - Maximum code size = 184640 ($0002d140) bytes
+
+Final output file size = 183176 ($0002cb88) bytes
