@@ -1693,16 +1693,20 @@ library_search (const char *lib, FILE_TIMESTAMP *mtime_ptr)
       "/lib",
       "/usr/lib",
 #endif
-#if defined(WINDOWS32) && !defined(LIBDIR)
+#ifdef _AMIGA
+      "lib:",
+      0
+    };
+#elif defined(WINDOWS32) && !defined(LIBDIR)
 /*
  * This is completely up to the user at product install time. Just define
  * a placeholder.
  */
 #define LIBDIR "."
-#endif
       LIBDIR,                   /* Defined by configuration.  */
       0
     };
+#endif
 
   const char *file = 0;
   char *libpatterns;

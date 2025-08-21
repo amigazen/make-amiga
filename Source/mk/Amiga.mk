@@ -25,9 +25,9 @@ MKDIR.cmd = makedir $1
 RM.cmd = delete $1
 CP.cmd = copy $1 To $2
 
-CPPFLAGS =
-CFLAGS =
-LDFLAGS =
+CPPFLAGS = DEF _AMIGA=1 DEF HAVE_CONFIG_H=1
+CFLAGS = UTILLIB
+LDFLAGS = with sc:lib/UTILLIB.with
 
 prog_SOURCES += $(alloca_SOURCES) $(loadavg_SOURCES) $(glob_SOURCES) $(amiga_SOURCES)
 
@@ -37,8 +37,8 @@ extra_CPPFLAGS = IDir $(OUTDIR)src IDir $(SRCDIR)/src IDir $(OUTDIR)lib IDir $(S
 
 C_SOURCE =
 OUTPUT_OPTION =
-LDFLAGS = From LIB:cres.o
-LDLIBS = Lib LIB:sc.lib LIB:amiga.lib
+#LDFLAGS = sc:lib/cres.o 
+LDLIBS = Lib sc:lib/sc.lib LIB sc:lib/scm.lib LIB:small.lib
 LINK_OUTPUT = To $@
 
 $(OUTDIR)src/config.h: $(SRCDIR)/src/config.ami

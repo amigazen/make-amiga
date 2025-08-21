@@ -1,7 +1,24 @@
-Short: Port of GNU Make with SAS/C (no ixemul.library required)
-Author: GNU, Amiga port by Aaron "Optimizer" Digulla
-Uploader: Aaron "Optimizer" Digulla (digulla@fh-konstanz.de)
+Short: Port of GNU Make with SAS/C (no ixemul)
+Author: GNU, Amiga port by Aaron "Optimizer" Digulla, 4.4.1 updates by Darren Coles
+Uploader: Darren Coles (darren_m_coles@yahoo.co.uk)
+Architecture: m68k-amigaos
 Type: dev/c
+
+----------------------------------------------------------------------------
+
+Update to GNU Make to 4.4.1 - this is the very last commit before all Amiga
+support was removed from the code. Therefore this is likely the last update
+we will ever see on the Amiga unless someone reinstates all of the changes.
+
+I made a few updates to get everything working again on the Amiga since it
+had not been built on the Amiga for some years. My changes are available
+here:
+
+https://github.com/dmcoles/gnu_make_amiga
+
+Darren Coles
+
+----------------------------------------------------------------------------
 
 This is a pure Amiga port of GNU Make. It needs no extra libraries or
 anything. It has the following features (in addition to any features of

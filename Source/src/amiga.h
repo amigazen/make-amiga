@@ -14,5 +14,9 @@ A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 You should have received a copy of the GNU General Public License along with
 this program.  If not, see <https://www.gnu.org/licenses/>.  */
 
+#include <stdarg.h>
+
 int MyExecute (char ** argv);
 char * wildcard_expansion (char * wc, char * o);
+int snprintf(char *buffer, size_t bufsize, const char *fmt, ...);
+int vsnprintf(char *buffer, size_t bufsize, const char *fmt, va_list args);
